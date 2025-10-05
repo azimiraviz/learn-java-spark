@@ -1,4 +1,4 @@
-package com.learning.java.spark;
+package com.learning.java.spark.hello_world;
 
 import com.google.gson.Gson;
 import org.slf4j.Logger;
@@ -9,8 +9,8 @@ import java.util.Map;
 
 import static spark.Spark.*;
 
-public class HelloWorld {
-    private static final Logger log = LoggerFactory.getLogger(HelloWorld.class);
+public class HelloWorldApplication {
+    private static final Logger log = LoggerFactory.getLogger(HelloWorldApplication.class);
     private static final Gson gson = new Gson();
     private static final int portNumber = 8080;
 

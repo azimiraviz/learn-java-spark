@@ -1,5 +1,6 @@
 package com.learning.java.spark;
 
+import com.learning.java.spark.hello_world.HelloWorldApplication;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.*;
 
@@ -10,12 +11,12 @@ import static org.hamcrest.Matchers.*;
  * Integration tests for Hello World application
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class HelloWorldTest {
+public class HelloWorldApplicationTest {
 
     @BeforeAll
     public static void setup() {
         // Start the application in a separate thread
-        new Thread(() -> HelloWorld.main(null)).start();
+        new Thread(() -> HelloWorldApplication.main(null)).start();
 
         // Wait for the server to start
         try {
